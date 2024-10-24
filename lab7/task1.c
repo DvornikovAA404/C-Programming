@@ -2,7 +2,9 @@
 #include <string.h>
 
 int main(){
-    char s[] = "Lorem ipsum dolor sit aaaaaaaaaaaaaaaaamet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+    char s[2000];
+    printf("Enter string: ");
+    fgets(s, sizeof(s), stdin);
     strcat(s, " ");
     char p[strlen(s)+2];
     int max = 0;
@@ -13,7 +15,6 @@ int main(){
             if((s[i] == ' ') && len>max){
                 max = len;
                 IND = i;
-                printf("%s\n", p);
             }
             len = 0;
             p[i] = ' ';
@@ -24,10 +25,10 @@ int main(){
             len++;
         }
     }
-    printf("%d : %d\n", IND-max, IND);
-    printf("%s\n", p);
+    if(IND == strlen(p)-1)
+        IND = IND - 1;
     for(int i = IND-max; i < IND; i++){
-        if(p[i] != ',' && p[i] != '!' && p[i] != '.')
+        if(p[i] != ',' && p[i] != '!' && p[i] != '.' && p[i] != ' ')
             p[i] = '#';
     }
     printf("%s\n", p);
