@@ -39,6 +39,7 @@ void Multmat(int **C, int **A, int **B, int m, int n, int k){
     }
 }
 
+<<<<<<< HEAD
 void Copy(int **D, int **C, int m, int k){
     for(int i=0; i<m; i++){
         for(int j=0; j<k; j++){
@@ -78,6 +79,8 @@ void FindZero(int **D, int **C, int m, int k){
     }
 }
 
+=======
+>>>>>>> 3e13dd4 (Lab9 completed)
 int main(){
     // Sizing
     int m, n, k;
@@ -103,11 +106,14 @@ int main(){
         C[i] = calloc(k, sizeof(int));
     }
 
+<<<<<<< HEAD
     int **D = calloc(m, sizeof(int*));
     for(int i = 0; i<m; i++){
         D[i] = calloc(k, sizeof(int));
     }
 
+=======
+>>>>>>> 3e13dd4 (Lab9 completed)
     // Debug show matrixs
     show(A, n, m);
     printf("============ × ============\n");
@@ -127,6 +133,7 @@ int main(){
     Multmat(C, A, B, m, n, k);
     show(C, k, m);
 
+<<<<<<< HEAD
     // =========== FIND ============
 
     printf("============ - ============\n");
@@ -140,6 +147,8 @@ int main(){
     Invert(D, C, m, k, 1);
     show(D, k, m);
 
+=======
+>>>>>>> 3e13dd4 (Lab9 completed)
     // =========== FREE ============
     freemat(A, n);
     free(A);
@@ -150,7 +159,10 @@ int main(){
     freemat(C, k);
     free(C);
     C = NULL;
+<<<<<<< HEAD
     freemat(D, k);
     free(D);
     D = NULL;
+=======
+>>>>>>> 3e13dd4 (Lab9 completed)
 }
