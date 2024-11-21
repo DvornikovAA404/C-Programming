@@ -1,18 +1,18 @@
 #include <stdio.h>
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "t_head.h"
 
 
 =======
 #include <math.h>
 #include <stdlib.h>
+=======
+#include "t_head.h"
+>>>>>>> 58b6079 (lab10 completed)
 
-struct point{
-        float x;
-        float y;
-        float z;
-};
 
+<<<<<<< HEAD
 void ent_point(struct point *A){
     float X, Y, Z;
     printf("X = ");
@@ -43,6 +43,8 @@ float Distance(struct point A, struct point B){
     return sqrt(pow((A.x-B.x), 2)+pow((A.y-B.y), 2)+pow((A.z-B.z), 2));
 }
 >>>>>>> 654face (lab10 in progress)
+=======
+>>>>>>> 58b6079 (lab10 completed)
 
 int main(){
     struct point A;
