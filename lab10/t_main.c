@@ -1,6 +1,7 @@
 #include <stdio.h>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "t_head.h"
 
 
@@ -45,6 +46,11 @@ float Distance(struct point A, struct point B){
 >>>>>>> 654face (lab10 in progress)
 =======
 >>>>>>> 58b6079 (lab10 completed)
+=======
+#include "t_head.h"
+
+
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
 
 int main(){
     struct point A;
