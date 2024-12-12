@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libMY_LIB2.so -o libMY_LIB2.so CMakeFiles/MY_LIB2.dir/read_pipe.c.o CMakeFiles/MY_LIB2.dir/write_pipe.c.o 

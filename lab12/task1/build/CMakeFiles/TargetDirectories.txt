@@ -1,0 +1,9 @@
+/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/CMakeFiles/Main.dir
+/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/background/CMakeFiles/MY_LIB.dir
+/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/background/CMakeFiles/edit_cache.dir
+/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/background/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/pipes/CMakeFiles/MY_LIB2.dir
+/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/pipes/CMakeFiles/edit_cache.dir
+/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/pipes/CMakeFiles/rebuild_cache.dir
