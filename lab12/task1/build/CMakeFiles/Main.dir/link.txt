@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Main.dir/src/main.c.o -o Main  -Wl,-rpath,"/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/background:/mnt/c/Users/advor/Desktop/Рабочий стол/Проекты/Лабораторные работы/C-Programming/lab12/task1/build/pipes" background/libMY_LIB.so pipes/libMY_LIB2.so 

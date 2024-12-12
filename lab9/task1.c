@@ -39,6 +39,13 @@ void Multmat(int **C, int **A, int **B, int m, int n, int k){
     }
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4948452 (lab9 fixed)
+=======
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
 void Copy(int **D, int **C, int m, int k){
     for(int i=0; i<m; i++){
         for(int j=0; j<k; j++){
@@ -78,6 +85,14 @@ void FindZero(int **D, int **C, int m, int k){
     }
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3e13dd4 (Lab9 completed)
+=======
+>>>>>>> 4948452 (lab9 fixed)
+=======
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
 int main(){
     // Sizing
     int m, n, k;
@@ -103,11 +118,26 @@ int main(){
         C[i] = calloc(k, sizeof(int));
     }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4948452 (lab9 fixed)
+=======
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
     int **D = calloc(m, sizeof(int*));
     for(int i = 0; i<m; i++){
         D[i] = calloc(k, sizeof(int));
     }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3e13dd4 (Lab9 completed)
+=======
+>>>>>>> 4948452 (lab9 fixed)
+=======
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
     // Debug show matrixs
     show(A, n, m);
     printf("============ × ============\n");
@@ -127,6 +157,13 @@ int main(){
     Multmat(C, A, B, m, n, k);
     show(C, k, m);
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4948452 (lab9 fixed)
+=======
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
     // =========== FIND ============
 
     printf("============ - ============\n");
@@ -140,6 +177,14 @@ int main(){
     Invert(D, C, m, k, 1);
     show(D, k, m);
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3e13dd4 (Lab9 completed)
+=======
+>>>>>>> 4948452 (lab9 fixed)
+=======
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
     // =========== FREE ============
     freemat(A, n);
     free(A);
@@ -150,7 +195,22 @@ int main(){
     freemat(C, k);
     free(C);
     C = NULL;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     freemat(D, k);
     free(D);
     D = NULL;
+=======
+>>>>>>> 3e13dd4 (Lab9 completed)
+=======
+    freemat(D, k);
+    free(D);
+    D = NULL;
+>>>>>>> 4948452 (lab9 fixed)
+=======
+    freemat(D, k);
+    free(D);
+    D = NULL;
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
 }

@@ -2,6 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
       "name": "(gdb) Launch",
       "type": "cppdbg",
       "request": "launch",
@@ -27,6 +32,10 @@
       ]
     },
     {
+<<<<<<< HEAD
+>>>>>>> cbf9ce6 (Backpack task is completed)
+=======
+>>>>>>> cbf9ce64231c06a9bbf750b8e3237f32d74d7208
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
