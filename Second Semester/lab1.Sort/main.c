@@ -8,7 +8,7 @@
 #include <time.h>
 
 
-#define N 10
+#define N 10000
 
 typedef struct Student
 {
@@ -125,6 +125,11 @@ int main(){
         int inf = rand() % 101;
         List[i] = addStudent(words[randomIndex], math, phy, inf);
     }
+
+    printf("--- ПРОЦЕССОР ---\n");
+    system("grep 'model name' /proc/cpuinfo | head -n 1 | awk -F': ' '{print $2}'");
+    system("grep 'cpu MHz' /proc/cpuinfo | head -n 1 | awk -F': ' '{print $2}'");
+
     printf("1 - Selection Sort; 2 - Counting Sort; 3 - Quick Sort\n");
     int menu = 0;
     while(menu != 1 && menu != 2 && menu != 3){ 
@@ -133,6 +138,9 @@ int main(){
             exit(-1);
         }
     }
+    printf("--- ДО СОРТИРОВКИ ---\n");
+    viewStud(List);
+    clock_t start = clock();
     switch (menu)
     {
     case 1:
@@ -149,5 +157,12 @@ int main(){
         Selection(List);
         break;
     }
+    clock_t end = clock();
+    double time = ((double) end - start)/CLOCKS_PER_SEC;
+    int size = sizeof(Stud) * N;
+    printf("--- ПОСЛЕ СОРТИРОВКИ ---\n");
     viewStud(List);
+
+    printf(" ``` Время выполнения скрипта: %.2f с ```\n", time);
+    printf(" ``` Размер данных: %d байт ```\n", size);
 }
