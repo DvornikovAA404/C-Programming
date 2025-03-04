@@ -1,4 +1,4 @@
-Stud Selection(Stud Arr[N]){
+int Selection(int N, int Arr[N]){
     for(int i = 0; i < N; i++){
         int min = 0;
         int mind = 0;
@@ -6,7 +6,7 @@ Stud Selection(Stud Arr[N]){
             if(Arr[j].total > min){
                 min = Arr[j].total;
                 mind = j;
-                Stud buffer = Arr[i];
+                int buffer = Arr[i];
                 Arr[i] = Arr[j];
                 Arr[j] = buffer;
             }
@@ -14,3 +14,7 @@ Stud Selection(Stud Arr[N]){
     }
 }
 
+int main(){
+    int a[3] = {4, 2, 0};
+    Selection(3, Arr);
+}
