@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int Selection(int N, int Arr[N]){
     for(int i = 0; i < N; i++){
         int min = 0;
