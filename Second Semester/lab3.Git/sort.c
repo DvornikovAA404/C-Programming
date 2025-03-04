@@ -3,7 +3,7 @@ int Selection(int N, int Arr[N]){
         int min = 0;
         int mind = 0;
         for(int j = i; j < N; j++){
-            if(Arr[j].total > min){skaskaks
+            if(Arr[j].total > min){
                 min = Arr[j].total;
                 mind = j;
                 int buffer = Arr[i];
@@ -15,6 +15,6 @@ int Selection(int N, int Arr[N]){
 }
 
 int main(){
-    int a[3] = {4, 2, 0};
+    int a[3] = {4, 0};
     Selection(3, Arr);
 }
