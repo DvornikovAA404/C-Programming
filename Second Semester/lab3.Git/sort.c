@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int Selection(int N, int Arr[N]){
     for(int i = 0; i < N; i++){
         int min = 0;
@@ -15,6 +17,6 @@ int Selection(int N, int Arr[N]){
 }
 
 int main(){
-    int a[3] = {4, 2, 0};
+    int a[3] = {4, 0};
     Selection(3, Arr);
 }
