@@ -8,7 +8,7 @@
 #include <time.h>
 
 
-#define N 10000
+#define N 100000
 
 typedef struct Student
 {
@@ -57,9 +57,6 @@ Stud Counting(Stud Arr[N]){
         }
     }
     int B[max+1];
-    for(int i = 0; i<max; i++){
-        B[i] = 0;
-    }
     for(int i = 0; i < N; i++){
         B[Arr[i].total]++;
     }
@@ -139,7 +136,7 @@ int main(){
         }
     }
     printf("--- ДО СОРТИРОВКИ ---\n");
-    viewStud(List);
+    //viewStud(List);
     clock_t start = clock();
     switch (menu)
     {
@@ -161,7 +158,7 @@ int main(){
     double time = ((double) end - start)/CLOCKS_PER_SEC;
     int size = sizeof(Stud) * N;
     printf("--- ПОСЛЕ СОРТИРОВКИ ---\n");
-    viewStud(List);
+    //viewStud(List);
 
     printf(" ``` Время выполнения скрипта: %.2f с ```\n", time);
     printf(" ``` Размер данных: %d байт ```\n", size);
